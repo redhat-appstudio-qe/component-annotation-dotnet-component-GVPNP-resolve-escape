@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-vkew
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/redhat-appstudio-qe/rs-demos-umsl-tenant/component-annotation-dotnet-component/devfile-sample-dotnet60-basic-vkew@sha256:2a89bc69d0fa24caacbd144914e765e775477bc72fbf456d4ea2bd3926bb336d
+        name: main
+        resources: {}
+status: {}
